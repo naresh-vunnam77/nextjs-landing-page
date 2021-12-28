@@ -1,25 +1,23 @@
+import { keyframes } from "@emotion/core"
+import ServiceThumb from "assets/service-thumb.png"
+import Secure from "assets/services/secure.svg"
+import Smart from "assets/services/smart.svg"
+import shapePattern from "assets/shape-pattern1.png"
+import TextFeature from "components/text-feature"
 import React, { useState } from "react"
+import { IoIosPlay } from "react-icons/io"
+import ModalVideo from "react-modal-video"
 /** @jsx jsx */
 import {
-  jsx,
-  Container,
   Box,
-  Grid,
-  Text,
-  Heading,
   Button,
+  Container,
+  Grid,
+  Heading,
   Image,
+  Text,
+  jsx,
 } from "theme-ui"
-import { keyframes } from "@emotion/core"
-import TextFeature from "components/text-feature"
-import ModalVideo from "react-modal-video"
-import { IoIosPlay } from "react-icons/io"
-
-import ServiceThumb from "assets/service-thumb.png"
-import shapePattern from "assets/shape-pattern1.png"
-
-import Smart from "assets/services/smart.svg"
-import Secure from "assets/services/secure.svg"
 
 const data = {
   subTitle: "our services",
@@ -52,7 +50,7 @@ export default function ServiceSection() {
   }
   return (
     <section sx={{ variant: "section.services" }}>
-      <Container sx={styles.contentBox}>
+      <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
           <Image src={ServiceThumb} alt="thumbnail" />
           <Button

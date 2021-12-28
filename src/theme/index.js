@@ -1,11 +1,12 @@
 export default {
   // example colors with dark mode
   colors: {
-    text: "#343D48", // body color and primary color
-    text_secondary: "#02073E", // secondary body color
-    heading: "#0F2137", // primary heading color
-    heading_secondary: "#0F2137", // heading color
-    background: "#FFFFFF", // body background color
+    text: "#EEEEEE", // body color and primary color
+    nav: "#FFFFFF",
+    text_secondary: "#EEEEEE", // secondary body color
+    heading: "#EEEEEE", // primary heading color
+    heading_secondary: "#EEEEEE", // heading color
+    background: "#141414", // body background color
     background_secondary: "#F9FBFD", // secondary background color
     border_color: "#E5ECF4", // border color
     yellow: "#FFA740", // border color
@@ -229,6 +230,7 @@ export default {
     },
     logo: {
       display: "flex",
+      text: "#EEEEEE",
     },
   },
   images: {
@@ -246,10 +248,10 @@ export default {
     // you can reference other values defined in the theme
     defaultBtn: {
       borderRadius: "45px",
-      fontSize: ["14px", null, null, 2],
+      fontSize: ["12px", null, null, 2],
       letterSpacings: "-0.15px",
       marginTop: "10px",
-      padding: ["10px 18px", null, "13px 28px"],
+      padding: ["8px 14px", null, "10px 25px"],
       fontFamily: "body",
       cursor: "pointer",
       lineHeight: 1.2,
@@ -280,8 +282,9 @@ export default {
       border: "2px solid",
       borderColor: "primary",
       color: "primary",
+      marginBottom: "10px",
       bg: "transparent",
-      padding: ["10px 15px", null, "15px 30px"],
+      padding: ["6px 10px", null, "10px 25px"],
       "&:hover": {
         color: "white",
         bg: "primary",

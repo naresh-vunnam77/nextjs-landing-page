@@ -1,5 +1,5 @@
-import { Box, Card, Text, Heading, Button } from "theme-ui"
 import React from "react"
+import { Box, Button, Card, Heading, Text } from "theme-ui"
 import List from "./list"
 
 export default function PriceCard({
@@ -25,6 +25,25 @@ export default function PriceCard({
           <Text as="p">{description}</Text>
         </Box>
         <List items={points} childStyle={styles.listItem} />
+        <Text className="package__price" sx={styles.price}>
+          {priceWithUnit}
+          <span>/Monthly</span>
+        </Text>
+        <Box sx={styles.buttonGroup}>
+          <Button variant="primary" aria-label={buttonText}>
+            {buttonText}
+          </Button>
+          {anotherOption && (
+            <Button
+              variant="textButton"
+              className="free__trail"
+              arial-label={anotherOption}
+              sx={{ color: "black" }}
+            >
+              {anotherOption}
+            </Button>
+          )}
+        </Box>
       </Box>
     </Card>
   )

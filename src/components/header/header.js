@@ -55,14 +55,15 @@ const positionAnim = keyframes`
 
 const styles = {
   header: {
-    color: "text",
+    color: "nav",
     fontWeight: "body",
     py: 4,
     width: "100%",
     position: "absolute",
     top: 0,
     left: 0,
-    backgroundColor: "transparent",
+    backgroundColor: "rgba(255, 255, 255,0.25)",
+    color: "#EEEEEE",
     transition: "all 0.4s ease",
     animation: `${positionAnim} 0.4s ease`,
     ".donate__btn": {
@@ -95,6 +96,7 @@ const styles = {
     a: {
       fontSize: 2,
       fontWeight: "body",
+      color: "text",
       px: 5,
       cursor: "pointer",
       lineHeight: "1.2",
